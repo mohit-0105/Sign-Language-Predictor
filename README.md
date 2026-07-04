@@ -24,9 +24,9 @@ Real-time hand sign recognition using computer vision. A webcam feed is processe
 
 ```
 sign-language-project/
-├── hand_tracking.py       # Phase 1: webcam + landmark visualization
-├── collect_data.py        # Phase 2: record labeled hand landmark data
-├── train_model.py         # Phase 3: train Random Forest classifier
+├── hand-tracking.py       # Phase 1: webcam + landmark visualization
+├── collect-data.py        # Phase 2: record labeled hand landmark data
+├── train-model.py         # Phase 3: train Random Forest classifier
 ├── predict.py             # Phase 4: real-time sign prediction
 ├── hand_landmarks.csv      # Collected training data (generated)
 ├── sign_model.pkl          # Trained model (generated)
@@ -57,19 +57,19 @@ sign-language-project/
 
 ### 1. Test hand tracking
 ```bash
-python hand_tracking.py
+python hand-tracking.py
 ```
 Confirms your webcam and MediaPipe are working — you should see 21 landmarks tracked on your hand.
 
 ### 2. Collect training data
 ```bash
-python collect_data.py
+python collect-data.py
 ```
 Records labeled hand landmark samples for each sign in your list. Press **SPACE** to start recording a sign, **s** to skip, **q** to quit.
 
 ### 3. Train the model
 ```bash
-python train_model.py
+python train-model.py
 ```
 Trains a Random Forest classifier on your collected data and saves it as `sign_model.pkl`. Prints accuracy and a classification report.
 
